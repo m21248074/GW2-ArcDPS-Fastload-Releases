@@ -12,7 +12,7 @@
 
 ## 安裝
 
-完全關閉遊戲並備份舊 DLL，再將 `arcdps_fastload.dll` 放入 `<Guild Wars 2>\bin64\`。請勿同時載入其他版本的 Fastload。需要支援 Dear ImGui 1.92.7 的 arcdps。
+完全關閉遊戲並備份舊 DLL，再將 `arcdps_fastload.dll` 放入 `<Guild Wars 2>\bin64\`。請勿同時載入其他版本的 Fastload。Fastload 1.0.0 配合目前最新版 arcdps 使用的 Dear ImGui 1.92.7，使用 arcdps 提供的共享 context 與記憶體配置／釋放函式。未來 arcdps 採用新的 ImGui 版本時，Fastload 也需配合調整並驗證相容性。
 
 請下載下方附件 `Fastload_1.0.0.zip` 或 `arcdps_fastload.dll`；`Source code` 是本發布倉庫的文件，不是安裝包。ZIP 包含第三方元件授權，單獨下載 DLL 時也請保留倉庫中的授權文件。
 

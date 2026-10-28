@@ -20,7 +20,9 @@ GitHub 自動產生的 `Source code (zip)` 與 `Source code (tar.gz)` 僅包含�
 
 ## 安裝與更新
 
-需要 Windows x64 的 Guild Wars 2，以及支援 Dear ImGui 1.92.7 的 arcdps。
+需要 Windows x64 的 Guild Wars 2，本插件由 arcdps 載入。Fastload 1.0.0 配合目前最新版 arcdps 使用的 Dear ImGui 1.92.7，使用 arcdps 提供的共享 context 與記憶體配置／釋放函式。未來 arcdps 採用新的 ImGui 版本時，Fastload 也需配合調整並驗證相容性。
+
+插件使用 arcdps 的共享 ImGui context，由 arcdps 負責畫面渲染，無需另外安裝 ImGui。ImGui 版本或交接資料不符時，Fastload 會拒絕初始化；此檢查用來確認插件與宿主的 ImGui 版本及交接資料相容。
 
 1. 完全關閉遊戲。更新前請備份目前使用的 Fastload DLL。
 2. 將 `arcdps_fastload.dll` 放入 `<Guild Wars 2>\bin64\`。
