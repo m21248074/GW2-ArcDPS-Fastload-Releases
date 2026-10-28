@@ -1,0 +1,11 @@
+# Public repository contains documents only; binaries are Release attachments.
+/*
+!/.gitignore
+!/README.md
+!/CHANGELOG.md
+!/RELEASE_NOTES.md
+!/THIRD_PARTY_NOTICES.md
+!/licenses/
+/licenses/*
+!/licenses/ImGui-LICENSE.txt
+!/licenses/MinHook-LICENSE.txt
